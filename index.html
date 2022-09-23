@@ -13,20 +13,21 @@
     <div class="general">
         <div class="showcase">
             <div class="contenedorShowcase">
-                <div class="contenedorItem"><img src="img/libro.png" class="imagenDisplay" /></div>
-                <div class="contenedorItem"><img src="img/bateria.png" class="imagenDisplay" /></div>
-                <div class="contenedorItem"><img src="img/inves.jpg" class="imagenDisplay" /></div>
+                <div class="contenedorItem"><img src="img/libro.png" id="libro" class="imagenDisplay" alt="book" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="img/bateria.png" id="bateria" class="imagenDisplay" alt="energy" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="img/inves.jpg" id="inves" class="imagenDisplay" alt="computer" draggable="true" ondragstart="drag(event)"/></div>
             </div>
         </div>
         <div class="cart">
             <div class="contenedorCart">
                 <div class="actualCart">
-                    <img src="img/cart.jpg" class="pictures"/>
+                    <img src="img/cart.jpg" id="contenedor1" class="pictures" ondrop="drop(event)" ondragover="allowDrop(event)"/>
                 </div>
-                <div class="totalPrice">0</div>
+                <div id="totalCarrito" class="totalPrice"></div>
             </div>
         </div>
     </div>
     
+    <script src="js/main.js"></script>
 </body>
 </html>
